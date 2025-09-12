@@ -1,4 +1,4 @@
-🧱 1. Fondamentaux du backend (hors Spring)
+# 🧱 1. Fondamentaux du backend (hors Spring)
 Avant de plonger dans Spring Boot, il faut maîtriser les bases du backend :
 
 HTTP & REST
@@ -45,7 +45,7 @@ Postman / Insomnia
 
 Maven / Gradle
 
-🌱 2. Java & écosystème
+# 🌱 2. Java & écosystème
 Spring Boot repose sur Java, donc il faut être à l’aise avec :
 
 Syntaxe Java moderne (Java 17+)
@@ -58,7 +58,7 @@ Exceptions, annotations
 
 Tests unitaires (JUnit, Mockito)
 
-🚀 3. Spring Boot Core
+# 🚀 3. Spring Boot Core
 Cœur du framework, à maîtriser absolument :
 
 Structure d’un projet Spring Boot
@@ -93,7 +93,7 @@ Gestion des exceptions
 
 @ExceptionHandler, ResponseEntity
 
-🔐 4. Spring Security
+# 🔐 4. Spring Security
 Indispensable pour les applications pro :
 
 Authentification avec JWT
@@ -104,7 +104,7 @@ Sécurisation des endpoints
 
 Configuration personnalisée
 
-📦 5. Tests & qualité
+# 📦 5. Tests & qualité
 Un bon backend est testé et maintenable :
 
 Tests unitaires (JUnit, Mockito)
@@ -115,7 +115,7 @@ Couverture de code
 
 Validation des contrats API (RestAssured, Testcontainers)
 
-🧭 6. Architecture & bonnes pratiques
+# 🧭 6. Architecture & bonnes pratiques
 Pour passer pro, il faut penser architecture :
 
 Architecture hexagonale / clean architecture
@@ -128,7 +128,7 @@ Séparation des responsabilités
 
 Gestion des erreurs et logs
 
-☁️ 7. Déploiement & production
+# ☁️ 7. Déploiement & production
 Tu dois savoir livrer ton app :
 
 Docker & Docker Compose
@@ -141,7 +141,7 @@ Logs (Logback, ELK stack)
 
 Base de données en production (migrations avec Flyway ou Liquibase)
 
-🧠 8. Bonus : microservices & cloud
+# 🧠 8. Bonus : microservices & cloud
 Quand tu seras à l’aise avec le monolithe :
 
 Spring Cloud (Config, Eureka, Gateway)
