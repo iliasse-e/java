@@ -32,7 +32,7 @@ public class file {
 
         // Chaines de caractères
 
-        String h = g + "chaine";
+        String h = g + "chaine"; // new String("chaine")
 
 
         // Booléen
