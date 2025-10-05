@@ -120,7 +120,7 @@ Pour passer pro, il faut penser architecture :
 
 Architecture hexagonale / clean architecture
 
-DTO vs entités
+DTO vs Entities
 
 Mapper (ModelMapper, MapStruct)
 
