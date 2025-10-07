@@ -11,7 +11,7 @@ public class MainApp {
     c1.afficher();
   
     try {
-      c2.retirer(20000);
+      c2.retirer(200);
     } catch (Exception e) {
       throw e;
     }

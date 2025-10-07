@@ -6,7 +6,11 @@ package fr.compte;
  */
 
 public abstract class Compte {
-  private int id;
+  /**
+   * L'intérêt d'utiliser une constante : Sécurité / perf mémoire
+   * Elle ne peut pas être réaffectée
+   */
+  private final int id;
   private float solde;
 
   /**
@@ -14,11 +18,13 @@ public abstract class Compte {
    */
   public Compte() {
     ++nombreDeComptes;
+    id = nombreDeComptes;
     solde = 0;
   }
 
   public Compte(float versementInitial) {
     ++nombreDeComptes;
+    id = nombreDeComptes;
     solde = versementInitial;
   }
 
@@ -38,7 +44,10 @@ public abstract class Compte {
     return solde;
   }
 
-  public void setSolde(float mt) {
+  /**
+   * En ajoutant final, j'empêche cette methode d'être redéfinie / @Override
+   */
+  public final void setSolde(float mt) {
      solde = solde + mt;
   }
 

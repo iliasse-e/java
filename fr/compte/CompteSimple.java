@@ -19,7 +19,6 @@ public class CompteSimple extends Compte {
    */
   @Override
   public void retirer(float mt) throws Exception {
-    System.out.println("Retirer | Check si decouvert plafonné");
     if ((decouvertAutorise + this.getSolde()) > mt) {
       this.setSolde(this.getSolde() - mt);
       return;
@@ -29,7 +28,13 @@ public class CompteSimple extends Compte {
 
   @Override
   public void afficher() {
+    System.out.println();
+    System.out.println("****************************************");
     System.out.println("Le solde du compte simple est de : " + getSolde());
+    System.out.println("L identifiant du compte simple est : " + getId());
+    System.out.println("Le decouvert autorise du compte simple est de : " + decouvertAutorise);
+    System.out.println("****************************************");
+    System.out.println();
   }
 
 }
