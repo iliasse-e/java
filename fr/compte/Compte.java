@@ -1,0 +1,56 @@
+package fr.compte;
+/**
+ * La classe présente est une classe abstraite
+ * Elle ne peut être instancié
+ * Et n'a de sens que lorsqu'elle est hérité par une classe dérivée
+ */
+
+public abstract class Compte {
+  private int id;
+  private float solde;
+
+  /**
+   * Les deux constructeurs ici représentent une surcharge
+   */
+  public Compte() {
+    ++nombreDeComptes;
+    solde = 0;
+  }
+
+  public Compte(float versementInitial) {
+    ++nombreDeComptes;
+    solde = versementInitial;
+  }
+
+  public void verser(float mt) {
+    this.solde = this.solde + mt;
+  }
+
+  public void retirer(float mt) throws Exception {
+    this.solde = this.solde - mt;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public float getSolde() {
+    return solde;
+  }
+
+  public void setSolde(float mt) {
+     solde = solde + mt;
+  }
+
+  /**
+   * L'attribut suivant est une variable de classe (et non d'instance)
+   * Sa valeur persiste indépendemment de l'instance
+   */
+  static int nombreDeComptes = 0;
+
+  /*
+   * Ceci est une méthode abstraite, elle devrait être déclaré par chaque classe dérivée
+   */
+  public abstract void afficher();
+
+}
