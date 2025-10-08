@@ -26,6 +26,9 @@ public class CompteSimple extends Compte {
     throw new Exception("Votre decouvert depasse");
   }
 
+  /**
+   * Méthode redéfinie (abstraite dans la classe mère)
+   */
   @Override
   public void afficher() {
     System.out.println();

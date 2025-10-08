@@ -11,7 +11,7 @@ public class CompteCourant extends Compte {
   }
 
   /**
-   * Méthode 
+   * Méthode redéfinie (abstraite dans la classe mère)
    */
   @Override
   public void afficher() {
