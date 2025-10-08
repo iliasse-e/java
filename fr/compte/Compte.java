@@ -3,9 +3,12 @@ package fr.compte;
  * La classe présente est une classe abstraite
  * Elle ne peut être instancié
  * Et n'a de sens que lorsqu'elle est hérité par une classe dérivée
+ * 
+ * Si la classe abstraite implément une interface, elle n'est pas obligé de déclarer ses méthodes,
+ * seules les classes dérivées le devront
  */
 
-public abstract class Compte {
+public abstract class Compte implements ICompte {
   /**
    * L'intérêt d'utiliser une constante : Sécurité / perf mémoire
    * Elle ne peut pas être réaffectée
