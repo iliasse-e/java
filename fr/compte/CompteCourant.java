@@ -3,11 +3,13 @@ package fr.compte;
 public class CompteCourant extends Compte {
 
   public CompteCourant() {
-    super();
+    // super() ou pas, le constructeur de la classe parent est appelé
+    System.out.println("Création du compte courant dont l'id est : " + getId());
   }
 
   public CompteCourant(float montantInitial) {
     super(montantInitial);
+    System.out.println("Création du compte courant dont l'id est : " + getId());
   }
 
   /**

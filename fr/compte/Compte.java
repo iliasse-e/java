@@ -23,12 +23,14 @@ public abstract class Compte implements ICompte {
     ++nombreDeComptes;
     id = nombreDeComptes;
     solde = 0;
+    System.out.println("Création du compte dont l'id est : " + id);
   }
 
   public Compte(float versementInitial) {
     ++nombreDeComptes;
     id = nombreDeComptes;
     solde = versementInitial;
+    System.out.println("Création du compte dont l'id est : " + id);
   }
 
   public void verser(float mt) {

@@ -1,21 +1,10 @@
-import fr.compte.*;
+import fr.fruit.Pomme;
 
 public class MainApp {
 
   public static void main(String[] args) throws Exception {
 
-    Compte c1 = new CompteCourant();
-    Compte c2 = new CompteSimple();
-
-    c1.verser(300);
-    c1.afficher();
-  
-    try {
-      c2.retirer(200);
-    } catch (Exception e) {
-      throw e;
-    }
+    ((Pomme)null).afficher();
     
-    c2.afficher();
   }
 }

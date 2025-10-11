@@ -13,6 +13,10 @@ public class CompteSimple extends Compte {
     this.decouvertAutorise = decouvertAutorise;
   }
 
+  public float getDecouvertAutorise() {
+    return decouvertAutorise;
+  }
+
   /*
    * Cette méthode existe déjà dans la classe abstraite héritée,
    * Ici elle est redéfinie
