@@ -13,3 +13,8 @@ Exercice est d'utiliser la méthode ``.sort()`` de la classe utilitaire ``Arrays
 ## Interface Iterator
 
 Représenté par les classes `ExIterator` & `EvennementIterateur` (dont cette derière est imbriquée).
+Cette interface necessaire la définition de méthodes : hasNext(), next() et remove().
+
+## Iterator et ListIterator
+
+Un autre exemple dans la classe `Iterateur`.
