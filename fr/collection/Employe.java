@@ -1,4 +1,4 @@
-package fr.entreprise;
+package fr.collection;
 
 /**
  * L'object de cette classe est l'implémentation de l'interface Comparable

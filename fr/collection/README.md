@@ -2,6 +2,9 @@
 
 (Cours sur les interfaces et les collections)[https://www.youtube.com/watch?v=kUC1YjalIr4&list=PLVJMczZGrFqm9aEe7sqkYTo-eeGcRahSj&index=8]
 
+![Interfaces Collection](C:\Users\elabo\Documents\Dev\Java\java\assets\collection_uml_diagram.png)
+
+
 ## La classe Employee
 
 Exercice est d'implémenter l'interface ``Comparable``
@@ -18,3 +21,8 @@ Cette interface necessaire la définition de méthodes : hasNext(), next() et re
 ## Iterator et ListIterator
 
 Un autre exemple dans la classe `Iterateur`.
+
+## Interface List
+
+- Extensibles à volonté - sans limite de taille.
+- Comprend les class `LinkedList`, `ArrayList` & `Vector`.

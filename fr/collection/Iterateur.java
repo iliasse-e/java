@@ -1,4 +1,4 @@
-package fr.entreprise;
+package fr.collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
