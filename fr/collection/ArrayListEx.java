@@ -15,6 +15,8 @@ public class ArrayListEx {
     arrList.get(1);
     arrList.set(0, "white");
     arrList.remove(0);
+    arrList.subList(1, 3).clear();;
+
     
     // On ajoute les données d'une arrayList dans une autre
     ArrayList arrList2 = new ArrayList<String>();

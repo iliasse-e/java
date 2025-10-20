@@ -1,7 +1,7 @@
-import fr.entreprise.Employe;
-import fr.entreprise.Entreprise;
-import fr.entreprise.ExIterateur;
-import fr.entreprise.Iterateur;
+import fr.collection.Employe;
+import fr.collection.Entreprise;
+import fr.collection.ExIterateur;
+import fr.collection.Iterateur;
 
 public class MainApp {
 

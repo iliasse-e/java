@@ -39,3 +39,8 @@ Hérite de l'interface `Collection`.
 Hérite de l'interface `Collection`.
 
 ## Interface Map
+
+- Couple de clé - valeur.
+- Implémentations : `HashMap`, `Hashtable`, `TreeMap` & `WeakHashMap`.
+
+- La clé sert à récupérer une valeur (grâce à la méthode `.get()`).
