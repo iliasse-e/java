@@ -9,21 +9,28 @@ public class FileEx {
 
     System.out.println("Absolute path : " + f.getAbsolutePath());
 
+    // On rend le fichier non modifiable
+    f.setWritable(false);
+    f.setReadable(true);
+
+    System.out.println("File can be read : " + f.canRead());
+    System.out.println("File can be written : " + f.canWrite());
+    System.out.println("File can be executed : " + f.canExecute());
+
     // On navigue dans chaque lecteur
     for(File lecteur: File.listRoots()) {
       System.out.println(lecteur.getAbsolutePath());
 
-      // On navigue dans chaque fichier
+      // On navigue dans chaque fichier / dossier
       for(File fichier: lecteur.listFiles()) {
-        System.out.println("File name : " + fichier.getName());
+
+        if (fichier.isDirectory()) {
+          System.out.println("Folder name : " + fichier.getName());
+        } else {
+          System.out.println("File name : " + fichier.getName());
+        }
 
 
-        // On rend le fichier non modifiable
-        fichier.setWritable(false);
-
-        System.out.println("File can be read : " + fichier.canRead());
-        System.out.println("File can be written : " + fichier.canWrite());
-        System.out.println("File can be executed : " + fichier.canExecute());
       }
     }
     
