@@ -2,7 +2,7 @@
 
 (Cours sur les interfaces et les collections)[https://www.youtube.com/watch?v=kUC1YjalIr4&list=PLVJMczZGrFqm9aEe7sqkYTo-eeGcRahSj&index=8]
 
-![Interfaces Collection](C:\Users\elabo\Documents\Dev\Java\java\assets\collection_uml_diagram.png)
+![Interfaces Collection](../../assets/collection_uml_diagram.png)
 
 
 ## Interface Comparable
