@@ -1,5 +1,4 @@
 package fr.io;
-import java.io.InputStream;
 import java.io.ByteArrayInputStream;
 
 public class InputStreamEx {
