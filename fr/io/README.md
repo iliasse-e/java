@@ -128,7 +128,7 @@ String resultat = writer.toString();
 
 La classe `FileWriter` permet d’écrire un flux de caractères dans un fichier.
 
-## 
+## Serialisation
 
 ```java
 
