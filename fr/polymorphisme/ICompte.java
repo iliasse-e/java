@@ -1,4 +1,4 @@
-package fr.compte;
+package fr.polymorphisme;
 
 public interface ICompte {
   public void verser(float mt);

@@ -1,4 +1,4 @@
-package fr.compte;
+package fr.polymorphisme;
 
 public class CompteCourant extends Compte {
 

@@ -1,4 +1,4 @@
-package fr.compte;
+package fr.polymorphisme;
 
 /*
  * Une classe peut aussi être déclarée en final

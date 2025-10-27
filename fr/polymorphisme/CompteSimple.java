@@ -1,4 +1,4 @@
-package fr.compte;
+package fr.polymorphisme;
 
 public class CompteSimple extends Compte {
   private float decouvertAutorise;

@@ -1,4 +1,4 @@
-package fr.compte;
+package fr.polymorphisme;
 /**
  * La classe présente est une classe abstraite
  * Elle ne peut être instancié
