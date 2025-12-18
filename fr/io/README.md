@@ -136,6 +136,8 @@ En Java, Serializable est une interface marqueur (marker interface).
 
 Quand une classe implémente `java.io.Serializable`, elle indique à la JVM qu’elle peut être convertie en un flux d’octets (serialization) et reconstruite ensuite (deserialization).
 
+Les classes `ObjectOutputStream` et `ObjectInputStream` permettent de réaliser la sérialisation.
+
 ```java
 class User implements Serializable {
     private String name;
