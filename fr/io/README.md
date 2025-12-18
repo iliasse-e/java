@@ -130,6 +130,49 @@ La classe `FileWriter` permet d’écrire un flux de caractères dans un fichier
 
 ## Serialisation
 
-```java
+En Java, Serializable est une interface marqueur (marker interface).
 
+*Interface marqueur : interface vide (sans méthodes) qui sert uniquement à signaler au runtime ou aux frameworks que la classe peut être traitée d’une certaine manière*
+
+Quand une classe implémente `java.io.Serializable`, elle indique à la JVM qu’elle peut être convertie en un flux d’octets (serialization) et reconstruite ensuite (deserialization).
+
+```java
+class User implements Serializable {
+    private String name;
+    private int age;
+
+    public User(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "User{name='" + name + "', age=" + age + "}";
+    }
+}
+
+public class SerializationDemo {
+    public static void main(String[] args) {
+        User user = new User("Ernest", 3);
+
+        // Sérialisation : écrire l'objet dans un fichier
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("user.ser"))) {
+            oos.writeObject(user);
+            System.out.println("Objet sérialisé !");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Désérialisation : relire l'objet depuis le fichier
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("user.ser"))) {
+            User deserializedUser = (User) ois.readObject();
+            System.out.println("Objet désérialisé : " + deserializedUser);
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
 ```
+
+Le fichier généré (user.ser) est un flux binaire (suite d’octets), illisible car codé en binaire.
